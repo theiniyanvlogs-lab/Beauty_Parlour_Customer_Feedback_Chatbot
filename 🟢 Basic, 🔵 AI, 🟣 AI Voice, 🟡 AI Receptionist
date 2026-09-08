@@ -1,0 +1,112 @@
+But here's the important business point
+
+Don't put every expensive feature into the ₹20,000/year package.
+
+Instead, make your product tiered.
+
+🟢 Basic — ₹999/month
+Customer feedback
+QR code
+Firestore
+Owner dashboard
+Basic analytics
+🔵 AI — ₹1,999/month
+
+Everything above +
+
+AI chatbot
+AI business insights
+Customer sentiment
+Automated recommendations
+🟣 AI Voice — ₹3,999/month+
+
+Everything above +
+
+Voice input
+AI voice assistant
+Appointment booking
+WhatsApp integration
+🟡 AI Receptionist — ₹5,999/month+
+Phone calls
+AI receptionist
+Booking
+Customer CRM
+WhatsApp
+Follow-ups
+Feedback
+AI analytics
+
+These prices are our possible product pricing, not DINGG's pricing.
+
+And there is another important point
+
+The microphone icon itself doesn't make the product expensive.
+
+For example:
+
+Message...                    🎙
+
+We can initially make it a browser voice-input feature.
+
+Customer taps 🎙:
+
+"The staff were very polite."
+
+Speech becomes:
+
+The staff were very polite.
+
+Then customer submits it.
+
+That's relatively simple.
+
+We don't need to immediately build a full:
+
+24/7 AI telephone receptionist
+
+which is much more expensive.
+
+So I recommend this for YOUR current version
+
+Keep the first version economical:
+
+             CUSTOMER APP
+                  │
+       ┌──────────┼──────────┐
+       ↓          ↓          ↓
+      Text       Voice     Rating
+       │          │          │
+       └──────────┼──────────┘
+                  ↓
+              Firestore
+                  ↓
+           OWNER DASHBOARD
+                  ↓
+             AI INSIGHTS
+
+Then later:
+
+Customer Phone
+      ↓
+AI Voice Receptionist
+      ↓
+Booking
+      ↓
+WhatsApp
+      ↓
+Firestore
+      ↓
+Owner Dashboard
+My recommendation
+
+Yes, let's design the UI with the voice option from day one, but don't activate the expensive full voice-agent infrastructure yet.
+
+That gives you a 2026-looking product now, while keeping your current Google Cloud cost under control.
+
+And your existing customer app already has the core seven-question feedback workflow, so we can add the voice button without changing the Firestore data model.
+
+The next version I would build is therefore:
+
+Premium UI + animation + microphone input + existing Firestore + existing URL.
+
+Then we can price the full AI Voice Receptionist as a higher plan when we actually sell it.
